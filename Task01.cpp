@@ -67,9 +67,9 @@ int main(int argc, char** argv)
     Adr* adress = nullptr;          // указатель на структуру адресов
     unsigned int numAdr = 0;        // адресов в базе
     Err err = NO_ERR;               // ошибок чтения - нет
-    std::ifstream file(IN_FILE);
     
     // читаю из файла
+    std::ifstream file(IN_FILE);
     if (file.is_open())
     {
         int temp; // временная переменная, т.к. проверка на отриц. значение
